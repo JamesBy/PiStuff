@@ -1,0 +1,168 @@
+body{
+	background-image:url('../../img/sativa.png');
+}
+
+.pagewrap{
+	max-width: 800px;
+	margin: 0px auto;
+}
+
+.row{
+	margin:0px auto !important;
+}
+
+.col-centered{
+   text-align: center;
+}
+
+#forwards{
+	background:url(../img/up.png) no-repeat;
+    cursor:pointer;
+    background-size: 100%;
+}
+
+#back{
+	 background:url(../img/down.png) no-repeat;
+    cursor:pointer;
+    background-size: 100%;
+}
+
+#left{
+	 background:url(../img/left.png) no-repeat;
+    cursor:pointer;
+    background-size: 100%;
+}
+
+#right{
+	background:url(../img/right.png) no-repeat;
+    cursor:pointer;
+    background-size: 100%;
+}
+
+#tPad{
+	position: absolute;
+	display:none;
+	border:2px solid black;
+	border-style: ridge;
+	border-radius: 50px;
+	background:#797B7A;
+	width: 120px;
+	height:120px;
+	z-index: 200;
+	opacity: .1;
+}
+
+#buttonHolder{
+	text-align: center;
+	position:relative;
+}
+
+#invtPad{
+	width:100%;
+	height: 200px;
+	border:1px dashed black;
+	background-color: #E9EAED;
+	background-image: url(../img/arrow.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+	background-position:center; 
+	clear:both;
+}
+
+#wrapper{
+	float: none;
+	margin: 0px auto;
+	margin-top: 50px;
+	padding: 50px;
+	background-color: #F5F5F5;
+	max-width: 900px;
+	-webkit-border-radius:10px;
+	-webkit-box-shadow:rgba(110,110,110,.5) -8px 8px 8px;
+	border-bottom: 1px solid #ccc; 
+	border-top: 1px solid #ccc; 
+	border-right: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+}
+
+#loaderdiv{
+	text-align: center;
+	min-height: 20px;
+	max-width: 400px;
+	margin: 0px auto;
+}
+
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 500px) {
+/* Styles */
+	#wrapper{
+		margin-top:100px;
+	}
+
+	.dashrow{
+		margin-top:		50px;
+	}
+
+	#invtPad{
+		margin-top:40px;
+		margin-bottom:40px;
+	}
+	#streamdiv{
+		margin-bottom:40px;
+	}
+}
+
+/* Phone screens ----------- */
+@media only screen 
+and (max-width : 499px) {
+	
+	#readout{
+		padding-top:10px;
+	}
+
+}
+
+table{
+	font-size: 20px;
+	margin: auto !important;
+	text-align: left;	
+}
+
+input{
+	font-size: 20px;
+}
+
+tr:nth-child(even) {
+	background: none;
+}
+
+#readout{
+	text-align: left;
+	background-color: #000000;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	max-height: 200px;
+	border:2px solid grey;
+	border-radius: 5px;
+	font-family:"Lucida Console", Monaco, monospace;
+	color: white;
+}
+
+#dashboard{
+	padding-top:	20px;
+	padding-bottom: 10px;
+	background-color: #000000;
+	border:2px solid grey;
+	border-radius: 5px;
+	font-family:"Lucida Console", Monaco, monospace;
+	color: white;
+}
+
+.led{
+    background-color: #f00;
+    width:20px;
+    height:20px;
+    border-radius: 5px;   
+}
+
